@@ -5,6 +5,7 @@ var Word = function(gameWord){
   this.found = false;
   this.fillLetterArray = function(){
     for (var i = 0; i <this.word.length; i++) {
+      // changed new letter.Letter to new letter.letter to match casing in name of function in letter.js
       this.letterArray.push(new letter.letter(this.word[i].toUpperCase()));
     }
   }
