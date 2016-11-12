@@ -5,7 +5,7 @@ var Word = function(gameWord){
   this.found = false;
   this.fillLetterArray = function(){
     for (var i = 0; i <this.word.length; i++) {
-      this.letterArray.push(new letter.Letter(this.word[i].toUpperCase()));
+      this.letterArray.push(new letter.letter(this.word[i].toUpperCase()));
     }
   }
   

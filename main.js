@@ -27,7 +27,8 @@ game = {
       clear();
       var userInput = result.guessLetter.toUpperCase();
 
-      if (result.guessedLetter.length>1 || self.lettersAlreadyGuessed.includes(userInput) || /[^A-Z]/.test(userInput)) {
+      //changed result.guessedLetter.length to result.guessLetter.length to match prompt test of guessLetter
+      if (result.guessLetter.length>1 || self.lettersAlreadyGuessed.includes(userInput) || /[^A-Z]/.test(userInput)) {
         //[^A-Z] should test if string only contains letters. fingers crossed
         console.log('\nUSER ERROR!!!\n');
         console.log('Please enter one letter that has not been used');
